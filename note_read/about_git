@@ -1,0 +1,12 @@
+git 命令小记
+
+//git push --set-upstream origin 分支名 ;  新建本地分支 push到remote
+
+// 重置name email proxy
+git config --global user.name ""
+git config --global user.email ""
+git config --global http.proxy
+git config --global --unset http.proxy
+
+//设置上传的请求缓存区，【需要上传的项目根目录下，执行】（150g）
+git config --global http.postBuffer 157286400

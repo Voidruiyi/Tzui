@@ -14,4 +14,21 @@ git config --global http.postBuffer 157286400
 git log --oneline -3
 
 
-//dev_1 u
+//merge 合并
+//rebase 变基
+
+例：  D -- E test
+    /
+A--B --C --F master
+
+在master执行git merge test,然后会得到如下结果：
+     D ----- E
+    /         \
+A--B--C--F----G  test, master
+在master执行git rebase test，然后得到如下结果：
+A---B---D---E---C'---F'   test, master
+可以看到，merge操作会生成一个新的节点，之前的提交分开显示。而rebase操作不会生成新的节点，是将两个分支融合成一个线性的提交。
+如果你想要一个干净的，没有merge commit的线性历史树，那么你应该选择git rebase如果你想保留完整的历史记录，并且想要避免重写commit history的风险，你应该选择使用git merge
+
+
+

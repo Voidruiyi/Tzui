@@ -15,9 +15,4 @@ public class TestUtils {
 
         return "2019/11/11 1352";
     }
-
-    public String  utils1405(){
-
-        return "2019/11/11 1405";
-    }
 }

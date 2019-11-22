@@ -1,1 +1,1 @@
-include ':app', ':lib.nestedscrolling'
+include ':app', ':lib.nestedscrolling', ':lib.reflect'

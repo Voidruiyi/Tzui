@@ -1,0 +1,24 @@
+1.
+  git stash 1 then 2
+  若unStash 1 : 代码回滚带stash1
+  若unStash 2 : 代码回滚带stash2
+  若unStash 1, 在unStash2 : 代码回滚带stash2, overRide 1
+  若继续次操作 可unStash1-commit, then unStash2触发merge 即可
+  注：stash 可clear
+
+2.
+  git commit N
+  git log --oneline -3 查看commmit信息
+  若消除commit 提交
+     git reset HEAD~1 回滚1次
+     git reset —soft [commit] 只改变提交点，暂存区和工作目录的内容都不改变
+     git reset —mixed [commit] 改变提交点，同时改变暂存区的内容
+     git reset —hard [commit] 暂存区、工作区的内容都会被修改到与提交点完全一致的状态
+     git reset --hard HEAD 让工作区回到上次提交时的状态
+     git reset --soft HEAD~1 只改变提交点，暂存区和工作目录的内容都不改变
+     git reset --mixed HEAD~n 改变提交点，同时改变暂存区的内容
+
+3.
+  cherry-pick
+
+

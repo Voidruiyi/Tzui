@@ -1,5 +1,7 @@
 package com.ry.tzui;
 
+import android.util.Log;
+
 /**
  * Created by ruiyi on 2019/11/11.
  */
@@ -14,5 +16,11 @@ public class TestUtils {
     public String  utils2(){
 
         return "2019/11/11 1352";
+    }
+
+    public void time1129(){
+        Log.e("eee", "1057");
+        Log.e("eee", "1058-2");
+
     }
 }

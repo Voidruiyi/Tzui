@@ -1,6 +1,4 @@
-package com.ry.tzui;
-
-import com.ry.tzui.generic.Test;
+package com.ry.libsnap;
 
 import org.junit.Test;
 

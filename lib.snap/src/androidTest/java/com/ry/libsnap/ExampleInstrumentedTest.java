@@ -1,10 +1,8 @@
-package com.ry.tzui;
+package com.ry.libsnap;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
 import android.support.test.runner.AndroidJUnit4;
-
-import com.ry.tzui.generic.Test;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -23,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.ry.tzui", appContext.getPackageName());
+        assertEquals("com.ry.libsnap.test", appContext.getPackageName());
     }
 }

@@ -1,5 +1,7 @@
 ﻿git 命令小记
 
+//git remote update origin --prune 刷新远程分支列表
+//git branch --set-upstream-to origin/远程分支名  本地分支名 :本地分支关联到远程分支
 //git push --set-upstream origin 分支名 ;  新建本地分支 push到remote
 
 // 重置name email proxy

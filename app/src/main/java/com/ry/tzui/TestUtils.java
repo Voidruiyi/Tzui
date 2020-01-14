@@ -19,15 +19,7 @@ public class TestUtils {
     }
 
     public void time1129(){
-        Log.e("eee", "1057");
-        Log.e("eee", "1058-2");
-
-
-
-        Log.e("eee", "22222222222222");
-
-
-        Log.e("eee", "11111111111111111111");
+        Log.e("eee", "20:05");
 
 
     }

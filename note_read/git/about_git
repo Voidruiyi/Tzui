@@ -4,29 +4,6 @@
 //git branch --set-upstream-to origin/远程分支名  本地分支名 :本地分支关联到远程分支
 //git push --set-upstream origin 分支名 ;  新建本地分支 push到remote
 
-// 重置name email proxy
-git config --global user.name ""
-git config --global user.email ""
-git config --global http.proxy
-git config --global --unset http.proxy
-
-//设置上传的请求缓存区，【需要上传的项目根目录下，执行】（150g）
-git config --global http.postBuffer 157286400
-
-git log --oneline -3
-
-//branch
-git branch 列出所有本地分支
-git branch -r 列出所有远程分支
-git branch -a 列出所有本地分支和远程分支
-git branch [branch-name] 新建一个分支，但依然停留在当前分支
-git checkout -b [branch-name] 新建一个分支，并切换到该分支
-git branch --track [branch][remote-branch] 新建一个分支，与指定的远程分支建立追踪关系
-git checkout [branch-name] 切换到指定分支，并更新工作区
-git branch -d [branch-name] 删除分支
-git push origin --delete [branch-name] 删除远程分支
-
-
 
 //merge 合并
 //rebase 变基

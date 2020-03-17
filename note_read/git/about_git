@@ -32,5 +32,15 @@ git reset --hard HEAD 让工作区回到上次提交时的状态
 
 //git revert是用一次新的commit来回滚之前的commit，git reset是直接删除指定的commit。
 
+//gitignore
+对已经提交上去的文件后期又添加到忽略队列
+例： a  : git rm -r --cached a（要删除的文件名） then : git push
+
+vim : shift zz
+
+ touch -- vim --esc wq
+
+
+
 
 

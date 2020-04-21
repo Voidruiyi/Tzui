@@ -2,35 +2,26 @@ package com.ry.tzui;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
-import java.util.concurrent.Callable;
-import java.util.concurrent.FutureTask;
-
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        findViewById(R.id.test).setOnClickListener(this);
 
     }
 
     public void test(){
 
-        Runnable runnable = new Runnable() {
-            @Override
-            public void run() {
 
-            }
-        };
+    }
 
-        Callable callable = new Callable<String>() {
-            @Override
-            public String call() throws Exception {
-                return null;
-            }
-        };
-
+    @Override
+    public void onClick(View v) {
+        test();
     }
 }

@@ -8,22 +8,43 @@
     android:padding="15dp"
     tools:context=".MainActivity">
 
+<!--    <TextView-->
+<!--        android:id="@+id/end"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="end"-->
+<!--        android:textColor="@color/colorAccent"-->
+<!--        android:textSize="18sp" />-->
+
+
     <TextView
-        android:id="@+id/tv_pre"
+        android:id="@+id/tv_zhong"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text=""
+        android:layout_marginTop="25dp"
+        android:text="zhong"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_liu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="liu"
         android:textColor="@color/colorAccent"
         android:textSize="18sp" />
 
 
     <TextView
-        android:id="@+id/tv_now"
+        android:id="@+id/tv_jiu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:text=""
+        android:layout_marginTop="25dp"
+        android:text="jiu"
         android:textColor="@color/colorAccent"
         android:textSize="18sp" />
+
+
 
 </LinearLayout>

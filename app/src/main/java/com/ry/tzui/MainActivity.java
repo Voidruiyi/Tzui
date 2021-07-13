@@ -1,57 +1,56 @@
 package com.ry.tzui;
 
+
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.TextView;
 
-import com.ry.tzui.link.LinkUtil;
-import com.ry.tzui.ui.MainActivity4;
-import com.ry.tzui.video.MainActivity3;
+import com.ry.tzui.test.TestActivity;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+
+public class MainActivity extends AppCompatActivity {
+
+    private TextView tve, tvz, tvl, tvj;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_start);
 
-        findViewById(R.id.test).setOnClickListener(this);
-        findViewById(R.id.next).setOnClickListener(this);
-    }
+        tvz = findViewById(R.id.tv_zhong);
+        tvl = findViewById(R.id.tv_liu);
+        tvj = findViewById(R.id.tv_jiu);
+
+//        tvz.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(MainActivity.this, TestActivity.class);
+//                startActivity(intent);
+//            }
+//        });
 
 
+        tvl.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MainTodActivity.class);
+                intent.putExtra("type", 2);
+                startActivity(intent);
+            }
+        });
 
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()){
-            case R.id.test:
-                test();
-                break;
-            case R.id.next:
-                startActivity(new Intent(this, MainActivity4.class));
-                break;
-        }
-    }
+        tvj.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MainTodActivity.class);
+                intent.putExtra("type", 3);
+                startActivity(intent);
+            }
+        });
 
-    //仅供测试
-    private void test() {
-
-        StringBuilder stringBuilder = new StringBuilder("");
-//            stringBuilder.append("-").append("1");
-            stringBuilder.append("-").append("2");
-            stringBuilder.append("-").append("3");
-
-        String select = stringBuilder.toString();
-        String select2 =select;
-        Log.e("eee", "se1="+select);
-        if(select.startsWith("-")){
-
-            Log.e("eee", "se2=");
-            select2 = select.replaceFirst("-", "");
-        }
-        Log.e("eee", "se="+select2);
     }
 
 }

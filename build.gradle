@@ -7,19 +7,20 @@ buildscript {
 //        jcenter()
 //        mavenCentral()
 
-        maven { url "http://10.136.192.250:8083/repository/maven-releases/" }
-        maven { url "http://10.136.192.250:8083/repository/aliyun/" }
-        maven { url "http://10.136.192.250:8083/repository/jcenter/" }
-        maven { url "http://10.136.192.250:8083/repository/dl.google.com/" }
-        maven { url "http://10.136.192.250:8083/repository/jitpack/" }
-        maven { url "http://10.136.192.250:8083/repository/thelasterstar/" }
+        jcenter()
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter'}
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/google'}
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/gradle-plugin'}
+
+        maven { url "https://jitpack.io" }
+        maven { url 'http://developer.huawei.com/repo/' }
+
         
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.2.1'
-        
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
+
     }
 }
 
@@ -28,16 +29,17 @@ allprojects {
 //        google()
 //        jcenter()
 //        mavenCentral()
-////        maven { url 'https://maven.google.com' }
-//        maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/'}
 
-        maven { url "http://10.136.192.250:8083/repository/maven-releases/" }
-        maven { url "http://10.136.192.250:8083/repository/aliyun/" }
-        maven { url "http://10.136.192.250:8083/repository/jcenter/" }
-        maven { url "http://10.136.192.250:8083/repository/dl.google.com/" }
-        maven { url "http://10.136.192.250:8083/repository/jitpack/" }
-        maven { url "http://10.136.192.250:8083/repository/thelasterstar/" }
-        maven { url 'http://10.136.192.250:8083/repository/googlebintray/' }
+
+        maven { url "https://jitpack.io" }
+        maven { url 'https://dl.google.com/dl/android/maven2/' }
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        google()
+        jcenter() { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        mavenCentral()
+        maven { url 'https://maven.aliyun.com/repository/google' }
+
+
         
     }
 }
